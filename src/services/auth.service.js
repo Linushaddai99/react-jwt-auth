@@ -3,7 +3,7 @@ import { response } from "express";
 
 const API_URL = "http://localhost:8080/api/auth/";
 
-export default function AuthService()  {
+export default function authService()  {
     const login = (username, password) => {
         return axios
         .post(API_URL + 'signin', {
